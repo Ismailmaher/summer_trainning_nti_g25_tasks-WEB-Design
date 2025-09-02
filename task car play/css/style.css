@@ -1,0 +1,35 @@
+
+.w-100 {
+    width: 100%;
+}
+
+.car {
+    background-image: url(../image/download.png);
+    height: 20vh;
+}
+
+.car img {
+    width: 100px;
+
+    margin-top: 20px;
+  }
+
+.car-animation {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    animation-name: moveCar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moveCar {
+    100% {
+        transform: translateX(0);
+    }
+
+    0% {
+        transform: translateX(1500%);
+    }
+}
