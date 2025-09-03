@@ -1,4 +1,4 @@
-/* *{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -60,10 +60,10 @@ body {
 
 section {
   width: 100%;
-} */
+} 
 
 /* ========== Navbar ========== */
-/* .navbar {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,10 +104,10 @@ section {
 
 .btn-started:hover {
   background: #ffcc66;
-} */
+}
 
 /* ========== Hero Section ========== */
-/* .hero {
+.hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -157,10 +157,10 @@ section {
 .hero-img img {
   width: 90%;
   border-radius: 15px;
-} */
+} 
 
 /* Responsive */
-/* @media (max-width: 900px) {
+ @media (max-width: 900px) {
   .hero {
     flex-direction: column;
     text-align: center;
@@ -173,38 +173,4 @@ section {
   .nav-links {
     display: none; 
   }
-} */
-.w-100 {
-    width: 100%;
-}
-
-.car {
-    background-image: url(../image/download.png);
-    height: 20vh;
-}
-
-.car img {
-    width: 100px;
-
-    margin-top: 20px;
-  }
-
-.car-animation {
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    animation-name: moveCar;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-@keyframes moveCar {
-    100% {
-        transform: translateX(0);
-    }
-
-    0% {
-        transform: translateX(1500%);
-    }
-}
+} 
