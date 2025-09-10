@@ -199,3 +199,153 @@ section .d-flex a:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+
+
+.identifier {
+  background-color: #DDCFB8;
+  height: 82vh;
+  display: flex;
+  align-items: center; /* يضمن إن النص والصورة في النص رأسيًا */
+}
+
+.text-box {
+  padding-left: 10%; /* تزحزح النصوص للداخل */
+}
+
+.bed-img {
+  max-width: 1000px;
+
+  height: auto;
+    display: block;
+
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #050505;
+  border: 1px solid #010101;
+  margin: 0 6px;
+  opacity: 0.5;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 768px) {
+  .text-box {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .bed-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+.features i {
+  color: #333;
+}
+
+.product-card {
+  position: relative;
+  background: #fff;
+  transition: transform 0.3s;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.discount {
+  top: 10px;
+  left: 10px;
+}
+
+.soldout {
+  top: 10px;
+  left: 10px;
+}
+
+.stars {
+  font-size: 14px;
+  color: #f1c40f;
+}
+
+/* overlay icons */
+.product-overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.product-overlay .icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+  position: relative;
+}
+
+.product-overlay .icon:hover {
+  background: #000;
+  color: transparent;
+}
+
+/* tooltip */
+.product-overlay .icon::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  right: 110%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.product-overlay .icon:hover::after {
+  opacity: 1;
+}
+.z-index {
+  z-index: 10;
+}
