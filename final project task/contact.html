@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Merto</title>
-
+ <link rel="icon" type="image/png" href="image/Home Furniture – Merto/imgi_91_logo-furniture-300x95.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top" id="header">
         <div class="container"> <a class="navbar-brand fw-bold" href="index.html"> <span
                     class="text-dark fs-1 me-5">M<span class="line-border-top">e</span>rto</span> </a>
             <div class="d-none d-lg-flex align-items-center ms-5"> <i class="fa fa-phone me-2 fs-3"></i> <span>Contact
@@ -46,6 +45,45 @@
                 </select> <input class="form-control me-2 border-0 p-2 bg-gray border-start" type="search"
                     placeholder="Search for products"> <button class="btn btn-dark" type="submit"><i
                         class="fa fa-search fs-2"></i></button> </form>
+
+                           <ul class="navbar-nav align-items-center  ms-auto">
+
+                <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center text-dark " href="#" role="button"
+                        data-bs-toggle="dropdown">
+                        <img src="https://flagcdn.com/16x12/us.png" class="me-1" alt="English"> English
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img src="https://flagcdn.com/16x12/es.png" class="me-2" alt="Español"> Español
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img src="https://flagcdn.com/16x12/fr.png" class="me-2" alt="Français"> Français
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img src="https://flagcdn.com/16x12/pt.png" class="me-2" alt="Português"> Português
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">
+                        USD
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">USD</a></li>
+                        <li><a class="dropdown-item" href="#">EUR</a></li>
+                        <li><a class="dropdown-item" href="#">EGP</a></li>
+                    </ul>
+                </li>
+            </ul>
+
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link text-dark" href="#">Account</a></li>
                 <li class="nav-item"> <a class="nav-link position-relative" href="#"> <i class="fa fa-heart fs-3"></i>
@@ -64,7 +102,7 @@
         <div class="container"> <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#mainNav"> <span class="navbar-toggler-icon"></span> </button>
             <div class="collapse navbar-collapse" id="mainNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!-- زرار يفتح offcanvas -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
                     <li class="nav-item"> <button class="btn nav-link fw-bold text-dark border-end pe-5" type="button"
                             data-bs-toggle="offcanvas" data-bs-target="#offcanvasCategories"> <i
                                 class="fa fa-bars me-1"></i>SHOP BY CATEGORIES </button> </li>
@@ -170,7 +208,7 @@
             <div class="category-item" data-bs-toggle="collapse" data-bs-target="#submenu1"> <i
                     class="fa fa-shirt"></i><a href="#">Fashion</a><i class="fa fa-angle-down"></i> </div>
             <div class="collapse sub-menu" id="submenu1"> <a href="#">Men</a> <a href="#">Women</a> <a href="#">Kids</a>
-            </div> <!-- Phone -->
+            </div> 
             <div class="category-item" data-bs-toggle="collapse" data-bs-target="#submenu2"> <i
                     class="fa fa-mobile"></i><a href="#">Phone & Tablet</a><i class="fa fa-angle-down"></i> </div>
             <div class="collapse sub-menu" id="submenu2"> <a href="#">Smartphones</a> <a href="#">Tablets</a> <a
@@ -225,42 +263,47 @@
     </section>
 
 
-
-
     <section class="py-5 bg-light">
         <div class="container">
             <h2 class="fw-bold text-center mb-4">Get in Touch</h2>
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <form>
+                    <form id="contactForm" novalidate>
                         <div class="row mb-3">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Name *" required>
+                                <input type="text" id="name" class="form-control" placeholder="Your Name *" required>
+                                <small class="text-danger d-none" id="nameError">The field is required.</small>
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="Your Email *" required>
+                                <input type="email" id="email" class="form-control" placeholder="Your Email *" required>
+                                <small class="text-danger d-none" id="emailError">The field is required.</small>
                             </div>
                         </div>
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Phone Number">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Subject">
-                            </div>
+
+                        <div class="col-md-12 mb-3">
+                            <input type="text" id="subject" class="form-control" placeholder="Subject *" required>
+                            <small class="text-danger d-none" id="subjectError">The field is required.</small>
                         </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Your Message *" required></textarea>
+                         <div class="mb-3">
+                            <textarea id="message" class="form-control" rows="5" placeholder="Your Message *"
+                                required></textarea>
+                            <small class="text-danger d-none" id="messageError">The field is required.</small>
                         </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-dark px-5">Send Message</button>
+
+                        <div class="text-center  cotrol-buton">
+                            <button type="submit" class="btn btn-dark px-5 w-100 cotrol-buton py-2">Get In Touch</button>
                         </div>
+
+                          
                     </form>
+
+                    <div id="formAlert" class="mt-3"></div>
+                    <div id="formAlert" class="mt-3 text-center"></div>
+
                 </div>
             </div>
         </div>
     </section>
-
 
 
     <section class="my-5">
@@ -272,10 +315,8 @@
         </div>
     </section>
 
+
     <section class="my-5">
-
-
-
         <div class="container py-5">
             <h2 class="text-center mb-5 fw-bold">Stores around the world</h2>
 
@@ -336,7 +377,6 @@
         <div class="container p-5">
 
             <div class="row mb-5">
-
                 <div class="col-md-3 mb-4">
                     <h3 class="fw-bold">Merto</h3>
                     <p><i class="bi bi-geo-alt-fill me-2"></i>29 SE 2nd Ave, Miami<br>Florida 33131, United States</p>
@@ -421,31 +461,23 @@
             <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
                 <p class="mb-2 mb-md-0">Copyright © Merto. All Rights Reserved</p>
                 <div class="payment-icons">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard">
-
-                    <img src="https://1000logos.net/wp-content/uploads/2021/05/Discover-logo.png" alt="Discover"
-                        width="80">
-
-                    <img class="pay-icon"
-       src="https://seeklogo.com/images/J/jcb-logo-EE0C3B1008-seeklogo.com.png"
-       alt="JCB">
-
-
-  <img class="pay-icon"
-       src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Google_Pay_Logo.svg"
-       alt="Google Pay">
-
-
-
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="Amex">
+                  <img src="image/Contact Us – Merto/imgi_54_payment-icons-1-500x51.png" alt="">
                 </div>
             </div>
 
         </div>
     </footer>
+
+
+
+
+    <a href="#header" id="upArrow" class="position-fixed bottom-0 end-0 mb-2 me-2 text-danger  d-none"><i class="fa-solid fa-arrow-up  text-white  control-icon-scrool"></i></a>
+
+
+
+
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

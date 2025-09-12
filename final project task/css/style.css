@@ -205,11 +205,11 @@ section .d-flex a:hover {
   background-color: #DDCFB8;
   height: 82vh;
   display: flex;
-  align-items: center; /* يضمن إن النص والصورة في النص رأسيًا */
+  align-items: center; 
 }
 
 .text-box {
-  padding-left: 10%; /* تزحزح النصوص للداخل */
+  padding-left: 10%; 
 }
 
 .bed-img {
@@ -252,11 +252,6 @@ section .d-flex a:hover {
   }
 }
 
-
-
-
-
-
 .features i {
   color: #333;
 }
@@ -288,7 +283,7 @@ section .d-flex a:hover {
   color: #f1c40f;
 }
 
-/* overlay icons */
+
 .product-overlay {
   position: absolute;
   top: 10px;
@@ -348,4 +343,180 @@ section .d-flex a:hover {
 }
 .z-index {
   z-index: 10;
+}
+
+
+
+
+.owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.owl-carousel .owl-nav button {
+    background: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    pointer-events: auto;
+    transition: 0.3s ease;
+}
+
+.owl-carousel .owl-nav button:hover {
+    background: #ff5252;
+    color: #fff;
+}
+
+.owl-carousel .owl-nav button span {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.owl-carousel:hover .owl-nav {
+    opacity: 1;
+}
+
+
+.hover-zoom {
+  transition: transform 0.6s ease;
+}
+.hover-zoom:hover {
+  transform: scale(1.1);
+}
+
+
+.circle-offer {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #a3331d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #a3331d;
+  font-size: 18px;
+  transition: transform 0.4s ease;
+  background-color: white;
+  z-index: 2;
+  position: relative;
+}
+.circle-offer span {
+  line-height: 1.2;
+}
+.circle-offer:hover {
+  transform: scale(1.1);
+  background-color: #a3331d;
+  color: #fff;
+}
+
+
+.sale-bg-text {
+  font-size: 200px;
+  font-weight: 800;
+  color: rgba(0,0,0,0.05); 
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}
+.bg-color-section800{
+  background-color:#d9f3e3;
+}
+
+
+
+.circle-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .circle-img img {
+    max-height: 160px;
+    transition: transform 0.3s ease;
+  }
+
+  .product-card:hover img {
+    animation: shakeX 0.4s ease-in-out infinite;
+  }
+
+  @keyframes shakeX {
+    0%   { transform: translateX(0); }
+    25%  { transform: translateX(-10px); }
+    50%  { transform: translateX(10px); }
+    75%  { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+  }
+
+  .shop-link {
+    display: inline-block;
+    margin-top: 8px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .shop-link:hover {
+    color: #555;
+    border-color: #555;
+  }
+.control-last-sec {
+  transition: all 0.3s ease-in-out;
+}
+
+.control-last-sec:hover {
+  filter: grayscale(100%);
+  transform: scale(1.05); 
+  cursor: pointer;
+}
+.payment-icons{
+  cursor: pointer;
+}
+
+.scale-hover img {
+  transition: transform 0.5s ease; 
+}
+
+.scale-hover img:hover {
+  transform: scale(1.3); 
+}
+
+.cotrol-buton:hover{
+background-color: red;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+#upArrow {
+  background: black;
+  color: white;
+  border: 1px solid black; 
+
+  padding: 4px 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
+.control-icon-scrool{
+  font-size: 14px;
 }

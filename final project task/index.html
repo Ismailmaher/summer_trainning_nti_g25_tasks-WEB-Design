@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Home-Furniture-Merto</title>
+ <link rel="icon" type="image/png" href="image/Home Furniture – Merto/imgi_91_logo-furniture-300x95.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top" id="header">
         <div class="container"> <a class="navbar-brand fw-bold" href="index.html"> <span
                     class="text-dark fs-1 me-5">M<span class="line-border-top">e</span>rto</span> </a>
             <div class="d-none d-lg-flex align-items-center ms-5"> <i class="fa fa-phone me-2 fs-3"></i> <span>Contact
@@ -45,6 +47,46 @@
                 </select> <input class="form-control me-2 border-0 p-2 bg-gray border-start" type="search"
                     placeholder="Search for products"> <button class="btn btn-dark" type="submit"><i
                         class="fa fa-search fs-2"></i></button> </form>
+
+            <ul class="navbar-nav align-items-center  ms-auto">
+
+                <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center text-dark " href="#" role="button"
+                        data-bs-toggle="dropdown">
+                        <img src="https://flagcdn.com/16x12/us.png" class="me-1" alt="English"> English
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img src="https://flagcdn.com/16x12/es.png" class="me-2" alt="Español"> Español
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img src="https://flagcdn.com/16x12/fr.png" class="me-2" alt="Français"> Français
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img src="https://flagcdn.com/16x12/pt.png" class="me-2" alt="Português"> Português
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">
+                        USD
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">USD</a></li>
+                        <li><a class="dropdown-item" href="#">EUR</a></li>
+                        <li><a class="dropdown-item" href="#">EGP</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link text-dark" href="#">Account</a></li>
                 <li class="nav-item"> <a class="nav-link position-relative" href="#"> <i class="fa fa-heart fs-3"></i>
@@ -57,6 +99,7 @@
                             class="badge bg-danger ms-1 position-absolute top-0 start-100 translate-middle rounded-circle mt-2">0</span>
                     </a> </li>
             </ul>
+
         </div>
     </nav>
     <nav class="navbar navbar-expand-lg bg-light border-bottom">
@@ -160,7 +203,7 @@
             </div>
         </div>
     </nav>
- <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCategories">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCategories">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title fw-bold">SHOP BY CATEGORIES</h5> <button type="button" class="btn-close"
                 data-bs-dismiss="offcanvas"></button>
@@ -169,11 +212,11 @@
             <div class="category-item" data-bs-toggle="collapse" data-bs-target="#submenu1"> <i
                     class="fa fa-shirt"></i><a href="#">Fashion</a><i class="fa fa-angle-down"></i> </div>
             <div class="collapse sub-menu" id="submenu1"> <a href="#">Men</a> <a href="#">Women</a> <a href="#">Kids</a>
-            </div> <!-- Phone -->
+            </div>
             <div class="category-item" data-bs-toggle="collapse" data-bs-target="#submenu2"> <i
                     class="fa fa-mobile"></i><a href="#">Phone & Tablet</a><i class="fa fa-angle-down"></i> </div>
             <div class="collapse sub-menu" id="submenu2"> <a href="#">Smartphones</a> <a href="#">Tablets</a> <a
-                    href="#">Accessories</a> </div> <!-- Laptop -->
+                    href="#">Accessories</a> </div>
             <div class="category-item" data-bs-toggle="collapse" data-bs-target="#submenu3"> <i
                     class="fa fa-laptop"></i><a href="#">Laptop & Computer</a><i class="fa fa-angle-down"></i> </div>
             <div class="collapse sub-menu" id="submenu3"> <a href="#">Laptops</a> <a href="#">Desktops</a> <a
@@ -271,7 +314,7 @@
 
         <div class="row text-center mb-4 features">
             <div class="col-md-3">
-                <i class="fa-regular fa-truck fs-2"></i>
+                <i class="fa-solid fa-truck-fast fs-2"></i>
                 <h6>Fast, Free Shipping</h6>
                 <p class="text-muted small">On order over $50</p>
             </div>
@@ -298,291 +341,617 @@
             <a href="#" class="text-dark small fw-semibold">See All Products</a>
         </div>
 
-        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
 
-            <div class="carousel-inner">
-                <!-- Slide 1 -->
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-6">
-                            <div class="product-card p-3 border rounded">
-                                <span class="badge bg-danger position-absolute discount z-index">-33%</span>
-                                <div class="product-img position-relative">
-                                    <img src="image/Home Furniture – Merto/imgi_26_cosmetics-40-1-300x300.jpg"
-                                        class="img-fluid mb-3" alt="">
-                                    <div class="product-overlay">
-                                        <a href="#" class="icon"><i class="fa-regular fa-heart"></i></a>
-                                        <a href="#" class="icon"><i class="fa-solid fa-eye"></i></a>
-                                        <a href="#" class="icon"><i class="fa-solid fa-arrows-left-right"></i></a>
-                                    </div>
-                                </div>
-                                <h6 class="small">14-inch Fashion Simplicity Wall Clock</h6>
-                                <p class="fw-bold mb-1">$50 <span
-                                        class="text-muted text-decoration-line-through">$75</span></p>
-                                <div class="stars">★★★★☆</div>
-                            </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="product-card p-3 border rounded">
+                    <span class="badge bg-danger position-absolute discount z-index">-33%</span>
+                    <div class="product-img position-relative">
+                        <img src="image/Home Furniture – Merto/imgi_26_cosmetics-40-1-300x300.jpg"
+                            class="img-fluid mb-3" alt="">
+                        <div class="product-overlay">
+                            <a href="#" class="icon"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="icon"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="icon"><i class="fa-solid fa-arrows-left-right"></i></a>
                         </div>
+                    </div>
+                    <h6 class="small">14-inch Fashion Simplicity Wall Clock</h6>
+                    <p class="fw-bold mb-1">$50 <span class="text-muted text-decoration-line-through">$75</span></p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
 
-                        <div class="col-md-2 col-sm-6">
-                            <div class="product-card p-3 border rounded">
-                                <span class="badge bg-danger position-absolute discount z-index">-20%</span>
-                                <div class="product-img position-relative">
-                                    <img src="image/Home Furniture – Merto/imgi_27_furniture-6-300x300.jpg"
-                                        class="img-fluid mb-3" alt="">
-                                    <div class="product-overlay">
-                                        <a href="#" class="icon"><i class="fa-regular fa-heart"></i></a>
-                                        <a href="#" class="icon"><i class="fa-solid fa-eye"></i></a>
-                                        <a href="#" class="icon"><i class="fa-solid fa-arrows-left-right"></i></a>
-                                    </div>
-                                </div>
-                                <h6 class="small">Studio Designs Chair</h6>
-                                <p class="fw-bold mb-1">$192 <span
-                                        class="text-muted text-decoration-line-through">$239</span></p>
-                                <div class="stars">★★★★★</div>
-                            </div>
+            <div class="item">
+                <div class="product-card p-3 border rounded">
+                    <span class="badge bg-danger position-absolute discount z-index">-20%</span>
+                    <div class="product-img position-relative">
+                        <img src="image/Home Furniture – Merto/imgi_27_furniture-6-300x300.jpg" class="img-fluid mb-3"
+                            alt="">
+                        <div class="product-overlay">
+                            <a href="#" class="icon"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="icon"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="icon"><i class="fa-solid fa-arrows-left-right"></i></a>
                         </div>
-                        <div class="col-md-2 col-sm-6">
-                            <div class="product-card p-3 border rounded">
-                                <span class="badge bg-danger position-absolute discount z-index">-48%</span>
-                                <div class="product-img position-relative">
-                                    <img src="image/Home Furniture – Merto/imgi_28_furniture-3-300x300.jpg"
-                                        class="img-fluid mb-3" alt="">
-                                    <div class="product-overlay">
-                                        <a href="#" class="icon" data-tooltip="Wishlist"><i
-                                                class="fa-regular fa-heart"></i></a>
-                                        <a href="#" class="icon" data-tooltip="Quick View"><i
-                                                class="fa-solid fa-eye"></i></a>
-                                        <a href="#" class="icon" data-tooltip="Compare"><i
-                                                class="fa-solid fa-arrows-left-right"></i></a>
-                                    </div>
-                                </div>
-                                <h6 class="small">Mid Century Modern Round Dining Table in Oak</h6>
-                                <p class="fw-bold mb-1">$569 <span
-                                        class="text-muted text-decoration-line-through">$1,099</span></p>
-                                <div class="stars">★★★★☆</div>
-                            </div>
+                    </div>
+                    <h6 class="small">Studio Designs Chair</h6>
+                    <p class="fw-bold mb-1">$192 <span class="text-muted text-decoration-line-through">$239</span></p>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-card p-3 border rounded">
+                    <span class="badge bg-danger position-absolute discount z-index">-48%</span>
+                    <div class="product-img position-relative">
+                        <img src="image/Home Furniture – Merto/imgi_28_furniture-3-300x300.jpg" class="img-fluid mb-3"
+                            alt="">
+                        <div class="product-overlay">
+                            <a href="#" class="icon" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="icon" data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="icon" data-tooltip="Compare"><i
+                                    class="fa-solid fa-arrows-left-right"></i></a>
                         </div>
-
-
-                        <div class="col-md-2 col-sm-6">
-                            <div class="product-card p-3 border rounded position-relative">
-                                <span class="badge bg-secondary position-absolute soldout z-index">SOLD OUT</span>
-                                <div class="product-img position-relative">
-                                    <img src="image/Home Furniture – Merto/imgi_29_furniture-5-300x300.jpg"
-                                        class="img-fluid mb-3 opacity-50" alt="">
-                                    <div class="product-overlay">
-                                        <a href="#" class="icon" data-tooltip="Wishlist"><i
-                                                class="fa-regular fa-heart"></i></a>
-                                        <a href="#" class="icon" data-tooltip="Quick View"><i
-                                                class="fa-solid fa-eye"></i></a>
-                                        <a href="#" class="icon" data-tooltip="Compare"><i
-                                                class="fa-solid fa-arrows-left-right"></i></a>
-                                    </div>
-                                </div>
-                                <h6 class="small">High seating comfort with built in armrest</h6>
-                                <p class="fw-bold mb-1">$1,465 <span
-                                        class="text-muted text-decoration-line-through">$1,536</span></p>
-                                <div class="stars">★★★★☆</div>
-                            </div>
+                    </div>
+                    <h6 class="small">Mid Century Modern Round Dining Table in Oak</h6>
+                    <p class="fw-bold mb-1">$569 <span class="text-muted text-decoration-line-through">$1,099</span></p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-card p-3 border rounded">
+                    <span class="badge bg-danger position-absolute discount z-index">-48%</span>
+                    <div class="product-img position-relative">
+                        <img src="image/Home Furniture – Merto/imgi_28_furniture-3-300x300.jpg" class="img-fluid mb-3"
+                            alt="">
+                        <div class="product-overlay">
+                            <a href="#" class="icon" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="icon" data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="icon" data-tooltip="Compare"><i
+                                    class="fa-solid fa-arrows-left-right"></i></a>
                         </div>
-
-
-                        <div class="col-md-2 col-sm-6">
-                            <div class="product-card p-3 border rounded">
-                                <span class="badge bg-danger position-absolute discount z-index">-26%</span>
-                                <div class="product-img position-relative">
-                                    <img src="image/Home Furniture – Merto/imgi_25_196-300x300.jpg"
-                                        class="img-fluid mb-3" alt="">
-                                    <div class="product-overlay">
-                                        <a href="#" class="icon" data-tooltip="Wishlist"><i
-                                                class="fa-regular fa-heart"></i></a>
-                                        <a href="#" class="icon" data-tooltip="Quick View"><i
-                                                class="fa-solid fa-eye"></i></a>
-                                        <a href="#" class="icon" data-tooltip="Compare"><i
-                                                class="fa-solid fa-arrows-left-right"></i></a>
-                                    </div>
-                                </div>
-                                <h6 class="small">Slate Table Lamp with Natural Slate Finish</h6>
-                                <p class="fw-bold mb-1">$138 <span
-                                        class="text-muted text-decoration-line-through">$188</span></p>
-                                <div class="stars">☆☆☆☆☆</div>
-                            </div>
+                    </div>
+                    <h6 class="small">Mid Century Modern Round Dining Table in Oak</h6>
+                    <p class="fw-bold mb-1">$569 <span class="text-muted text-decoration-line-through">$1,099</span></p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-card p-3 border rounded position-relative">
+                    <span class="badge bg-secondary position-absolute soldout z-index">SOLD OUT</span>
+                    <div class="product-img position-relative">
+                        <img src="image/Home Furniture – Merto/imgi_29_furniture-5-300x300.jpg"
+                            class="img-fluid mb-3 opacity-50" alt="">
+                        <div class="product-overlay">
+                            <a href="#" class="icon" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="icon" data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="icon" data-tooltip="Compare"><i
+                                    class="fa-solid fa-arrows-left-right"></i></a>
                         </div>
-                        <div class="col-md-2 col-sm-6">
-                            <div class="product-card p-3 border rounded">
-                                <span class="badge bg-danger position-absolute discount z-index">-26%</span>
-                                <div class="product-img position-relative">
-                                    <img src="image/Home Furniture – Merto/imgi_25_196-300x300.jpg"
-                                        class="img-fluid mb-3" alt="">
-                                    <div class="product-overlay">
-                                        <a href="#" class="icon" data-tooltip="Wishlist"><i
-                                                class="fa-regular fa-heart"></i></a>
-                                        <a href="#" class="icon" data-tooltip="Quick View"><i
-                                                class="fa-solid fa-eye"></i></a>
-                                        <a href="#" class="icon" data-tooltip="Compare"><i
-                                                class="fa-solid fa-arrows-left-right"></i></a>
-                                    </div>
-                                </div>
-                                <h6 class="small">Slate Table Lamp with Natural Slate Finish</h6>
-                                <p class="fw-bold mb-1">$138 <span
-                                        class="text-muted text-decoration-line-through">$188</span></p>
-                                <div class="stars">☆☆☆☆☆</div>
-                            </div>
+                    </div>
+                    <h6 class="small">High seating comfort with built in armrest</h6>
+                    <p class="fw-bold mb-1">$1,465 <span class="text-muted text-decoration-line-through">$1,536</span>
+                    </p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-card p-3 border rounded position-relative">
+                    <span class="badge bg-secondary position-absolute soldout z-index">SOLD OUT</span>
+                    <div class="product-img position-relative">
+                        <img src="image/Home Furniture – Merto/imgi_29_furniture-5-300x300.jpg"
+                            class="img-fluid mb-3 opacity-50" alt="">
+                        <div class="product-overlay">
+                            <a href="#" class="icon" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="icon" data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="icon" data-tooltip="Compare"><i
+                                    class="fa-solid fa-arrows-left-right"></i></a>
                         </div>
+                    </div>
+                    <h6 class="small">High seating comfort with built in armrest</h6>
+                    <p class="fw-bold mb-1">$1,465 <span class="text-muted text-decoration-line-through">$1,536</span>
+                    </p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-card p-3 border rounded position-relative">
+                    <span class="badge bg-secondary position-absolute soldout z-index">SOLD OUT</span>
+                    <div class="product-img position-relative">
+                        <img src="image/Home Furniture – Merto/imgi_29_furniture-5-300x300.jpg"
+                            class="img-fluid mb-3 opacity-50" alt="">
+                        <div class="product-overlay">
+                            <a href="#" class="icon" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="icon" data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="icon" data-tooltip="Compare"><i
+                                    class="fa-solid fa-arrows-left-right"></i></a>
+                        </div>
+                    </div>
+                    <h6 class="small">High seating comfort with built in armrest</h6>
+                    <p class="fw-bold mb-1">$1,465 <span class="text-muted text-decoration-line-through">$1,536</span>
+                    </p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-card p-3 border rounded position-relative">
+                    <span class="badge bg-secondary position-absolute soldout z-index">SOLD OUT</span>
+                    <div class="product-img position-relative">
+                        <img src="image/Home Furniture – Merto/imgi_29_furniture-5-300x300.jpg"
+                            class="img-fluid mb-3 opacity-50" alt="">
+                        <div class="product-overlay">
+                            <a href="#" class="icon" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="icon" data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="icon" data-tooltip="Compare"><i
+                                    class="fa-solid fa-arrows-left-right"></i></a>
+                        </div>
+                    </div>
+                    <h6 class="small">High seating comfort with built in armrest</h6>
+                    <p class="fw-bold mb-1">$1,465 <span class="text-muted text-decoration-line-through">$1,536</span>
+                    </p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-card p-3 border rounded position-relative">
+                    <span class="badge bg-secondary position-absolute soldout z-index">SOLD OUT</span>
+                    <div class="product-img position-relative">
+                        <img src="image/Home Furniture – Merto/imgi_29_furniture-5-300x300.jpg"
+                            class="img-fluid mb-3 opacity-50" alt="">
+                        <div class="product-overlay">
+                            <a href="#" class="icon" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="icon" data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="icon" data-tooltip="Compare"><i
+                                    class="fa-solid fa-arrows-left-right"></i></a>
+                        </div>
+                    </div>
+                    <h6 class="small">High seating comfort with built in armrest</h6>
+                    <p class="fw-bold mb-1">$1,465 <span class="text-muted text-decoration-line-through">$1,536</span>
+                    </p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-card p-3 border rounded position-relative">
+                    <span class="badge bg-secondary position-absolute soldout z-index">SOLD OUT</span>
+                    <div class="product-img position-relative">
+                        <img src="image/Home Furniture – Merto/imgi_29_furniture-5-300x300.jpg"
+                            class="img-fluid mb-3 opacity-50" alt="">
+                        <div class="product-overlay">
+                            <a href="#" class="icon" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="icon" data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="icon" data-tooltip="Compare"><i
+                                    class="fa-solid fa-arrows-left-right"></i></a>
+                        </div>
+                    </div>
+                    <h6 class="small">High seating comfort with built in armrest</h6>
+                    <p class="fw-bold mb-1">$1,465 <span class="text-muted text-decoration-line-through">$1,536</span>
+                    </p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-card p-3 border rounded position-relative">
+                    <span class="badge bg-secondary position-absolute soldout z-index">SOLD OUT</span>
+                    <div class="product-img position-relative">
+                        <img src="image/Home Furniture – Merto/imgi_29_furniture-5-300x300.jpg"
+                            class="img-fluid mb-3 opacity-50" alt="">
+                        <div class="product-overlay">
+                            <a href="#" class="icon" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="icon" data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="icon" data-tooltip="Compare"><i
+                                    class="fa-solid fa-arrows-left-right"></i></a>
+                        </div>
+                    </div>
+                    <h6 class="small">High seating comfort with built in armrest</h6>
+                    <p class="fw-bold mb-1">$1,465 <span class="text-muted text-decoration-line-through">$1,536</span>
+                    </p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-card p-3 border rounded position-relative">
+                    <span class="badge bg-secondary position-absolute soldout z-index">SOLD OUT</span>
+                    <div class="product-img position-relative">
+                        <img src="image/Home Furniture – Merto/imgi_29_furniture-5-300x300.jpg"
+                            class="img-fluid mb-3 opacity-50" alt="">
+                        <div class="product-overlay">
+                            <a href="#" class="icon" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="icon" data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="icon" data-tooltip="Compare"><i
+                                    class="fa-solid fa-arrows-left-right"></i></a>
+                        </div>
+                    </div>
+                    <h6 class="small">High seating comfort with built in armrest</h6>
+                    <p class="fw-bold mb-1">$1,465 <span class="text-muted text-decoration-line-through">$1,536</span>
+                    </p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-card p-3 border rounded position-relative">
+                    <span class="badge bg-secondary position-absolute soldout z-index">SOLD OUT</span>
+                    <div class="product-img position-relative">
+                        <img src="image/Home Furniture – Merto/imgi_29_furniture-5-300x300.jpg"
+                            class="img-fluid mb-3 opacity-50" alt="">
+                        <div class="product-overlay">
+                            <a href="#" class="icon" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="icon" data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="icon" data-tooltip="Compare"><i
+                                    class="fa-solid fa-arrows-left-right"></i></a>
+                        </div>
+                    </div>
+                    <h6 class="small">High seating comfort with built in armrest</h6>
+                    <p class="fw-bold mb-1">$1,465 <span class="text-muted text-decoration-line-through">$1,536</span>
+                    </p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-card p-3 border rounded position-relative">
+                    <span class="badge bg-secondary position-absolute soldout z-index">SOLD OUT</span>
+                    <div class="product-img position-relative">
+                        <img src="image/Home Furniture – Merto/imgi_29_furniture-5-300x300.jpg"
+                            class="img-fluid mb-3 opacity-50" alt="">
+                        <div class="product-overlay">
+                            <a href="#" class="icon" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="icon" data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="icon" data-tooltip="Compare"><i
+                                    class="fa-solid fa-arrows-left-right"></i></a>
+                        </div>
+                    </div>
+                    <h6 class="small">High seating comfort with built in armrest</h6>
+                    <p class="fw-bold mb-1">$1,465 <span class="text-muted text-decoration-line-through">$1,536</span>
+                    </p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+        </div>
 
+    </section>
+
+    <section>
+        <div class="container my-5 py-5">
+            <div class="row g-0">
+
+                <div class="col-md-6">
+                    <div class="position-relative overflow-hidden rounded h-100 scale-hover">
+                        <img src="image/Home Furniture – Merto/imgi_31_banner1-demo3.jpg" alt="Couch"
+                            class="img-fluid w-100 d-block object-fit-cover" style="height: 650px; object-fit: cover;">
+                        <div class="position-absolute top-0 start-0  p-5 text-white" style="max-width: 60%;">
+                            <h6 class="fw-bold text-uppercase mb-2">Design by Cozy</h6>
+                            <h2 class="fw-bold display-5">Modern Mini Couch</h2>
+                            <p class="mb-3">51 Inches Loveseat Sofa</p>
+                            <a href="#" class="btn btn-outline-light px-4 py-2">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 d-flex flex-column">
+
+                    <div class="position-relative flex-fill overflow-hidden mb-0 rounded scale-hover">
+                        <img src="image/Home Furniture – Merto/imgi_32_banner2-mobile-demo3.jpg" alt="Plant Pot"
+                            class="img-fluid w-100 d-block object-fit-cover" style="height: 320px; object-fit: cover;">
+                        <div class="position-absolute top-50 start-0 translate-middle-y p-4 text-dark ps-5">
+                            <h3 class="fw-bold">Plant Pots <br> Only $14.00</h3>
+                            <p class="text-muted mb-3">Don't miss the opportunity...</p>
+                            <a href="#" class="btn btn-outline-dark btn-sm px-4">Shop Now</a>
+                        </div>
+                        <span
+                            class="badge bg-danger position-absolute top-0 end-0 m-3 fs-6 rounded-circle px-3 py-4 mt-5 me-5">-30%</span>
+                    </div>
+
+                    <div class="position-relative flex-fill overflow-hidden rounded scale-hover">
+                        <img src="image/Home Furniture – Merto/imgi_34_banner3-mobile-demo3.jpg" alt="Lamp"
+                            class="img-fluid w-100 d-block " style="height: 330px; object-fit: cover;">
+                        <div class="position-absolute top-50 start-0 translate-middle-y p-4 text-white ps-5">
+                            <h6 class="text-uppercase fw-bold mb-2">New Arrivals</h6>
+                            <h3 class="fw-bold">Romina <br> Table Lamp</h3>
+                            <p class="mb-3">Creates gentle elegance</p>
+                            <a href="#" class="btn btn-outline-light btn-sm px-4">Shop Now</a>
+                        </div>
 
                     </div>
                 </div>
 
-                <!-- Slide 2 -->
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-6">
-                            <div class="product-card p-3 border rounded">
-                                <span class="badge bg-danger position-absolute discount z-index">-33%</span>
-                                <div class="product-img position-relative">
-                                    <img src="image/Home Furniture – Merto/imgi_26_cosmetics-40-1-300x300.jpg"
-                                        class="img-fluid mb-3" alt="">
-                                    <div class="product-overlay">
-                                        <a href="#" class="icon"><i class="fa-regular fa-heart"></i></a>
-                                        <a href="#" class="icon"><i class="fa-solid fa-eye"></i></a>
-                                        <a href="#" class="icon"><i class="fa-solid fa-arrows-left-right"></i></a>
-                                    </div>
-                                </div>
-                                <h6 class="small">14-inch Fashion Simplicity Wall Clock</h6>
-                                <p class="fw-bold mb-1">$50 <span
-                                        class="text-muted text-decoration-line-through">$75</span></p>
-                                <div class="stars">★★★★☆</div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2 col-sm-6">
-                            <div class="product-card p-3 border rounded">
-                                <span class="badge bg-danger position-absolute discount z-index">-20%</span>
-                                <div class="product-img position-relative">
-                                    <img src="image/Home Furniture – Merto/imgi_27_furniture-6-300x300.jpg"
-                                        class="img-fluid mb-3" alt="">
-                                    <div class="product-overlay">
-                                        <a href="#" class="icon"><i class="fa-regular fa-heart"></i></a>
-                                        <a href="#" class="icon"><i class="fa-solid fa-eye"></i></a>
-                                        <a href="#" class="icon"><i class="fa-solid fa-arrows-left-right"></i></a>
-                                    </div>
-                                </div>
-                                <h6 class="small">Studio Designs Chair</h6>
-                                <p class="fw-bold mb-1">$192 <span
-                                        class="text-muted text-decoration-line-through">$239</span></p>
-                                <div class="stars">★★★★★</div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-6">
-                            <div class="product-card p-3 border rounded">
-                                <span class="badge bg-danger position-absolute discount z-index">-48%</span>
-                                <div class="product-img position-relative">
-                                    <img src="image/Home Furniture – Merto/imgi_28_furniture-3-300x300.jpg"
-                                        class="img-fluid mb-3" alt="">
-                                    <div class="product-overlay">
-                                        <a href="#" class="icon" data-tooltip="Wishlist"><i
-                                                class="fa-regular fa-heart"></i></a>
-                                        <a href="#" class="icon" data-tooltip="Quick View"><i
-                                                class="fa-solid fa-eye"></i></a>
-                                        <a href="#" class="icon" data-tooltip="Compare"><i
-                                                class="fa-solid fa-arrows-left-right"></i></a>
-                                    </div>
-                                </div>
-                                <h6 class="small">Mid Century Modern Round Dining Table in Oak</h6>
-                                <p class="fw-bold mb-1">$569 <span
-                                        class="text-muted text-decoration-line-through">$1,099</span></p>
-                                <div class="stars">★★★★☆</div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-2 col-sm-6">
-                            <div class="product-card p-3 border rounded position-relative">
-                                <span class="badge bg-secondary position-absolute soldout z-index">SOLD OUT</span>
-                                <div class="product-img position-relative">
-                                    <img src="image/Home Furniture – Merto/imgi_29_furniture-5-300x300.jpg"
-                                        class="img-fluid mb-3 opacity-50" alt="">
-                                    <div class="product-overlay">
-                                        <a href="#" class="icon" data-tooltip="Wishlist"><i
-                                                class="fa-regular fa-heart"></i></a>
-                                        <a href="#" class="icon" data-tooltip="Quick View"><i
-                                                class="fa-solid fa-eye"></i></a>
-                                        <a href="#" class="icon" data-tooltip="Compare"><i
-                                                class="fa-solid fa-arrows-left-right"></i></a>
-                                    </div>
-                                </div>
-                                <h6 class="small">High seating comfort with built in armrest</h6>
-                                <p class="fw-bold mb-1">$1,465 <span
-                                        class="text-muted text-decoration-line-through">$1,536</span></p>
-                                <div class="stars">★★★★☆</div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-2 col-sm-6">
-                            <div class="product-card p-3 border rounded">
-                                <span class="badge bg-danger position-absolute discount z-index">-26%</span>
-                                <div class="product-img position-relative">
-                                    <img src="image/Home Furniture – Merto/imgi_25_196-300x300.jpg"
-                                        class="img-fluid mb-3" alt="">
-                                    <div class="product-overlay">
-                                        <a href="#" class="icon" data-tooltip="Wishlist"><i
-                                                class="fa-regular fa-heart"></i></a>
-                                        <a href="#" class="icon" data-tooltip="Quick View"><i
-                                                class="fa-solid fa-eye"></i></a>
-                                        <a href="#" class="icon" data-tooltip="Compare"><i
-                                                class="fa-solid fa-arrows-left-right"></i></a>
-                                    </div>
-                                </div>
-                                <h6 class="small">Slate Table Lamp with Natural Slate Finish</h6>
-                                <p class="fw-bold mb-1">$138 <span
-                                        class="text-muted text-decoration-line-through">$188</span></p>
-                                <div class="stars">☆☆☆☆☆</div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-6">
-                            <div class="product-card p-3 border rounded">
-                                <span class="badge bg-danger position-absolute discount z-index">-26%</span>
-                                <div class="product-img position-relative">
-                                    <img src="image/Home Furniture – Merto/imgi_25_196-300x300.jpg"
-                                        class="img-fluid mb-3" alt="">
-                                    <div class="product-overlay">
-                                        <a href="#" class="icon" data-tooltip="Wishlist"><i
-                                                class="fa-regular fa-heart"></i></a>
-                                        <a href="#" class="icon" data-tooltip="Quick View"><i
-                                                class="fa-solid fa-eye"></i></a>
-                                        <a href="#" class="icon" data-tooltip="Compare"><i
-                                                class="fa-solid fa-arrows-left-right"></i></a>
-                                    </div>
-                                </div>
-                                <h6 class="small">Slate Table Lamp with Natural Slate Finish</h6>
-                                <p class="fw-bold mb-1">$138 <span
-                                        class="text-muted text-decoration-line-through">$188</span></p>
-                                <div class="stars">☆☆☆☆☆</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-
             </div>
-          
-            </div>
+        </div>
     </section>
 
 
 
+    <section class="py-5 text-center position-relative m-5">
+        <div class="container position-relative">
 
+
+            <h1 class="sale-bg-text">SALE OFF</h1>
+
+            <h4 class="fw-bold mb-5 position-relative">Cyber Weekend</h4>
+            <div class="d-flex justify-content-center gap-4 flex-wrap position-relative">
+
+                <div class="circle-offer">
+                    <span>+10% <br> OFF</span>
+                </div>
+
+                <div class="circle-offer">
+                    <span>+20% <br> OFF</span>
+                </div>
+
+                <div class="circle-offer">
+                    <span>+30% <br> OFF</span>
+                </div>
+
+                <div class="circle-offer">
+                    <span>+40% <br> OFF</span>
+                </div>
+
+                <div class="circle-offer bg-danger text-white">
+                    <span>+50% <br> OFF</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container my-5 py-5">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    <div class="product-card p-3 border rounded">
+                        <span class="badge bg-danger position-absolute discount z-index">-33%</span>
+                        <div class="product-img position-relative">
+                            <img src="image/Home Furniture – Merto/imgi_24_cosmetics-33-300x300.jpg"
+                                class="img-fluid mb-3" alt="">
+                            <div class="product-overlay">
+                                <a href="#" class="icon"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#" class="icon"><i class="fa-solid fa-eye"></i></a>
+                                <a href="#" class="icon"><i class="fa-solid fa-arrows-left-right"></i></a>
+                            </div>
+                        </div>
+                        <h6 class="small">14-inch Fashion Simplicity Wall Clock</h6>
+                        <p class="fw-bold mb-1">$50 <span class="text-muted text-decoration-line-through">$75</span></p>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card p-3 border rounded">
+                        <span class="badge bg-danger position-absolute discount z-index">-33%</span>
+                        <div class="product-img position-relative">
+                            <img src="image/Home Furniture – Merto/imgi_25_196-300x300.jpg" class="img-fluid mb-3"
+                                alt="">
+                            <div class="product-overlay">
+                                <a href="#" class="icon"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#" class="icon"><i class="fa-solid fa-eye"></i></a>
+                                <a href="#" class="icon"><i class="fa-solid fa-arrows-left-right"></i></a>
+                            </div>
+                        </div>
+                        <h6 class="small">14-inch Fashion Simplicity Wall Clock</h6>
+                        <p class="fw-bold mb-1">$50 <span class="text-muted text-decoration-line-through">$75</span></p>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card p-3 border rounded">
+                        <span class="badge bg-danger position-absolute discount z-index">-33%</span>
+                        <div class="product-img position-relative">
+                            <img src="image/Home Furniture – Merto/imgi_27_furniture-6-300x300.jpg"
+                                class="img-fluid mb-3" alt="">
+                            <div class="product-overlay">
+                                <a href="#" class="icon"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#" class="icon"><i class="fa-solid fa-eye"></i></a>
+                                <a href="#" class="icon"><i class="fa-solid fa-arrows-left-right"></i></a>
+                            </div>
+                        </div>
+                        <h6 class="small">14-inch Fashion Simplicity Wall Clock</h6>
+                        <p class="fw-bold mb-1">$50 <span class="text-muted text-decoration-line-through">$75</span></p>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="product-card p-3 border rounded">
+                        <span class="badge bg-danger position-absolute discount z-index">-33%</span>
+                        <div class="product-img position-relative">
+                            <img src="image/Home Furniture – Merto/imgi_24_cosmetics-33-300x300.jpg"
+                                class="img-fluid mb-3" alt="">
+                            <div class="product-overlay">
+                                <a href="#" class="icon"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#" class="icon"><i class="fa-solid fa-eye"></i></a>
+                                <a href="#" class="icon"><i class="fa-solid fa-arrows-left-right"></i></a>
+                            </div>
+                        </div>
+                        <h6 class="small">14-inch Fashion Simplicity Wall Clock</h6>
+                        <p class="fw-bold mb-1">$50 <span class="text-muted text-decoration-line-through">$75</span></p>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card p-3 border rounded">
+                        <span class="badge bg-danger position-absolute discount z-index">-33%</span>
+                        <div class="product-img position-relative">
+                            <img src="image/Home Furniture – Merto/imgi_25_196-300x300.jpg" class="img-fluid mb-3"
+                                alt="">
+                            <div class="product-overlay">
+                                <a href="#" class="icon"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#" class="icon"><i class="fa-solid fa-eye"></i></a>
+                                <a href="#" class="icon"><i class="fa-solid fa-arrows-left-right"></i></a>
+                            </div>
+                        </div>
+                        <h6 class="small">14-inch Fashion Simplicity Wall Clock</h6>
+                        <p class="fw-bold mb-1">$50 <span class="text-muted text-decoration-line-through">$75</span></p>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card p-3 border rounded">
+                        <span class="badge bg-danger position-absolute discount z-index">-33%</span>
+                        <div class="product-img position-relative">
+                            <img src="image/Home Furniture – Merto/imgi_27_furniture-6-300x300.jpg"
+                                class="img-fluid mb-3" alt="">
+                            <div class="product-overlay">
+                                <a href="#" class="icon"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#" class="icon"><i class="fa-solid fa-eye"></i></a>
+                                <a href="#" class="icon"><i class="fa-solid fa-arrows-left-right"></i></a>
+                            </div>
+                        </div>
+                        <h6 class="small">14-inch Fashion Simplicity Wall Clock</h6>
+                        <p class="fw-bold mb-1">$50 <span class="text-muted text-decoration-line-through">$75</span></p>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card p-3 border rounded">
+                        <span class="badge bg-danger position-absolute discount z-index">-33%</span>
+                        <div class="product-img position-relative">
+                            <img src="image/Home Furniture – Merto/imgi_28_furniture-3-300x300.jpg"
+                                class="img-fluid mb-3" alt="">
+                            <div class="product-overlay">
+                                <a href="#" class="icon"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#" class="icon"><i class="fa-solid fa-eye"></i></a>
+                                <a href="#" class="icon"><i class="fa-solid fa-arrows-left-right"></i></a>
+                            </div>
+                        </div>
+                        <h6 class="small">14-inch Fashion Simplicity Wall Clock</h6>
+                        <p class="fw-bold mb-1">$50 <span class="text-muted text-decoration-line-through">$75</span></p>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card p-3 border rounded">
+                        <span class="badge bg-danger position-absolute discount z-index">-33%</span>
+                        <div class="product-img position-relative">
+                            <img src="image/Home Furniture – Merto/imgi_29_furniture-5-300x300.jpg"
+                                class="img-fluid mb-3" alt="">
+                            <div class="product-overlay">
+                                <a href="#" class="icon"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#" class="icon"><i class="fa-solid fa-eye"></i></a>
+                                <a href="#" class="icon"><i class="fa-solid fa-arrows-left-right"></i></a>
+                            </div>
+                        </div>
+                        <h6 class="small">14-inch Fashion Simplicity Wall Clock</h6>
+                        <p class="fw-bold mb-1">$50 <span class="text-muted text-decoration-line-through">$75</span></p>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="py-4">
+        <div class="container bg-color-section800 py-4 px-5 my-5 rounded-3">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 mb-3 mb-lg-0 d-flex justify-content-between align-items-center">
+                    <div>
+                        <h4 class="fw-bold fs-3 text-dark mb-3">
+                            Earn Cash Back For The Things You Buy Every Where
+                        </h4>
+                        <p class="mb-0">
+                            Application via Merto.
+                            <a href="#" class="text-decoration-underline">Terms &amp; Conditions.</a>
+                        </p>
+                    </div>
+                    <a href="#" class="btn btn-success px-5 d-inline-flex align-items-center gap-2 ">VIEW MORE</a>
+                </div>
+
+
+                <div class="col-lg-6 text-center">
+                    <img src="image/Home Furniture – Merto/imgi_65_payments-2-1-500x130.png" alt="Payment Methods"
+                        class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="py-5">
+        <div class="container text-center border-bottom">
+            <h2 class="fw-bold mb-5">Shop by Department</h2>
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <div class="product-card p-4">
+                        <div class="circle-img mx-auto mb-3">
+                            <img src="image/Home Furniture – Merto/imgi_37_image-box-1.jpg" alt="Coffee Table"
+                                class="img-fluid">
+                        </div>
+                        <h6 class="fw-semibold">Coffee Table from $20</h6>
+                        <a href="#" class="shop-link">Shop now →</a>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <div class="product-card p-4">
+                        <div class="circle-img mx-auto mb-3">
+                            <img src="image/Home Furniture – Merto/imgi_38_image-box-2.jpg" alt="Sectionals"
+                                class="img-fluid">
+                        </div>
+                        <h6 class="fw-semibold">Sectionals from $300</h6>
+                        <a href="#" class="shop-link">Shop now →</a>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <div class="product-card p-4">
+                        <div class="circle-img mx-auto mb-3">
+                            <img src="image/Home Furniture – Merto/imgi_39_image-box-3.jpg" alt="Vase"
+                                class="img-fluid">
+                        </div>
+                        <h6 class="fw-semibold">Flower Vase from $5</h6>
+                        <a href="#" class="shop-link">Shop now →</a>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <div class="product-card p-4">
+                        <div class="circle-img mx-auto mb-3">
+                            <img src="image/Home Furniture – Merto/imgi_40_image-box-4.jpg" alt="Headboard"
+                                class="img-fluid">
+                        </div>
+                        <h6 class="fw-semibold">Headboard Sale Off</h6>
+                        <a href="#" class="shop-link">Shop now →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-2">
+                    <a href=""><img src="image/Home Furniture – Merto/imgi_41_furniture-brand-1.jpg" alt=""
+                            class="control-last-sec"></a>
+                </div>
+                <div class="col-2">
+                    <a href=""><img src="image/Home Furniture – Merto/imgi_42_furniture-brand-2-200x80.jpg" alt=""
+                            class="control-last-sec"></a>
+                </div>
+                <div class="col-2">
+                    <a href=""><img src="image/Home Furniture – Merto/imgi_43_furniture-brand-3.jpg" alt=""
+                            class="control-last-sec"></a>
+                </div>
+                <div class="col-2">
+                    <a href=""><img src="image/Home Furniture – Merto/imgi_44_furniture-brand-4.jpg" alt=""
+                            class="control-last-sec"></a>
+                </div>
+                <div class="col-2">
+                    <a href=""><img src="image/Home Furniture – Merto/imgi_45_furniture-brand-5.jpg" alt=""
+                            class="control-last-sec"></a>
+                </div>
+                <div class="col-2">
+                    <a href=""><img src="image/Home Furniture – Merto/imgi_46_furniture-brand-6.jpg" alt=""
+                            class="control-last-sec"></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <footer class="pt-5 pb-3 ">
@@ -674,29 +1043,22 @@
             <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
                 <p class="mb-2 mb-md-0">Copyright © Merto. All Rights Reserved</p>
                 <div class="payment-icons">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard">
-
-                    <img src="https://1000logos.net/wp-content/uploads/2021/05/Discover-logo.png" alt="Discover"
-                        width="80">
-
-                    <img class="pay-icon" src="https://seeklogo.com/images/J/jcb-logo-EE0C3B1008-seeklogo.com.png"
-                        alt="JCB">
-
-
-                    <img class="pay-icon" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Google_Pay_Logo.svg"
-                        alt="Google Pay">
-
-
-
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="Amex">
+                    <img src="image/Contact Us – Merto/imgi_54_payment-icons-1-500x51.png" alt="">
                 </div>
             </div>
 
         </div>
     </footer>
+
+<a href="#" id="upArrow" class="position-fixed bottom-0 end-0 mb-2 me-2 text-danger  d-none">
+  <i class="fa-solid fa-arrow-up  control-icon-scrool text-white"></i>
+</a>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
